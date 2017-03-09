@@ -17,11 +17,12 @@ title: Qudini technology blog
 email: info@qudini.com
 description: > # this means to ignore newlines until "baseurl:"
   At qudini we pride ourselves on being innovative and using the latest technology to provide excellent customer expriences.
-  Hear from our engineering team here on the tech behind qudini.
+  Hear from our engineering team here on the tech behind qudini. Head over to [qudini.com](https://www.qudini.com/) for more info. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://qudini.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: qudini
 github_username:  qudini
+google_analytics: UA-35525840-9
 
 # Build settings
 markdown: kramdown
