@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Qudini is an enterprise Customer Experience Management cloud platform that enables brands to transform their in-store customer experience, and as result improve their; sales, operations and customer relationships.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+In one single flexible platform, use Qudini to manage your resources and connect with customers across multiple journeys and channels using our solutions for: Appointment Booking, Queue Management, Collection Management and Event bookings.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+To learn more about Qudini and what we offer, please head over to [qudini.com](https://www.qudini.com/)
