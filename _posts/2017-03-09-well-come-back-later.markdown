@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "We'll Check Back Later; Async IO in Today's Programming Languages"
+author: louis_jackman
 date:   2017-03-09 16:53:55 +0000
 categories: qudini programming performance async
 ---
