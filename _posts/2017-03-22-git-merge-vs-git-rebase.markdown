@@ -5,7 +5,7 @@ author: christophe_maillard
 date:   2017-03-22 16:42:00 +0000
 categories: qudini git merge rebase
 ---
-# Preamble
+## Preamble
 
 This post is widely oriented around [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). The tables have been generated with the nice [ASCII Table Generator](https://ozh.github.io/ascii-tables/), and the history trees with this wonderful command ([aliased](https://githowto.com/aliases) as `git lg`):
 
@@ -15,7 +15,7 @@ git log --graph --abbrev-commit --decorate --date=format:'%Y-%m-%d %H:%M:%S' --f
 
 Tables are in reverse chronological order to be more consistent with the history trees. See also the difference between `git merge` and `git merge --no-ff` first (you usually want to use `git merge --no-ff` as it makes your history look closer to the reality):
 
-### `git merge`
+#### `git merge`
 
 Commands:
 
@@ -40,7 +40,7 @@ Result:
             First commit - Christophe
 ```
 
-### `git merge --no-ff`
+#### `git merge --no-ff`
 
 Commands:
 
@@ -69,7 +69,7 @@ Result:
 
 ---
 
-# `git merge` vs `git rebase`
+## `git merge` vs `git rebase`
 
 First point: **always merge features into develop, never rebase develop from features**. This is a consequence of the [Golden Rule of Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing):
 
@@ -83,9 +83,9 @@ I would personally add: *unless it's a feature branch AND you and your team are 
 
 So the question of `git merge` vs `git rebase` applies almost only to the feature branches (in the following examples, `--no-ff` has always been used when merging). Note that since I'm not sure there's one better solution ([a debate exists](https://www.atlassian.com/git/articles/git-team-workflows-merge-or-rebase)), I'll only provide how both commands behave. In my case, I prefer using `git rebase` as it produces a nicer history tree :)
 
-## Between feature branches
+### Between feature branches
 
-### `git merge`
+#### `git merge`
 
 Commands:
 
@@ -131,7 +131,7 @@ Result:
             First commit - Christophe
 ```
 
-### `git rebase`
+#### `git rebase`
 
 Commands:
 
@@ -173,9 +173,9 @@ Result:
             First commit - Christophe
 ```
 
-## From `develop` to a feature branch
+### From `develop` to a feature branch
 
-### `git merge`
+#### `git merge`
 
 Commands:
 
@@ -220,7 +220,7 @@ Result:
             First commit - Christophe
 ```
 
-### `git rebase`
+#### `git rebase`
 
 Commands:
 
@@ -263,9 +263,9 @@ Result:
 
 ---
 
-# Side notes
+## Side notes
 
-### `git cherry-pick`
+#### `git cherry-pick`
 
 When you just need one specific commit, `git cherry-pick` is a nice solution (the `-x` option appends a line that says "*(cherry picked from commit...)*" to the original commit message body, so it's usually a good idea to use it - `git log <commit_sha1>` to see it):
 
@@ -312,7 +312,7 @@ Result:
             First commit - Christophe
 ```
 
-### `git pull --rebase`
+#### `git pull --rebase`
 
 Not sure I can explain it better than [Derek Gourlay](https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase/)... Basically, use `git pull --rebase` instead of `git pull` :) What's missing in the article though, is that [you can enable it by default](https://coderwall.com/p/tnoiug/rebase-by-default-when-doing-git-pull):
 
@@ -320,10 +320,10 @@ Not sure I can explain it better than [Derek Gourlay](https://www.derekgourlay.c
 git config --global pull.rebase true
 ```
 
-### `git rerere`
+#### `git rerere`
 
 Again, nicely explained [here](https://git-scm.com/blog/2010/03/08/rerere.html). But put simple, if you enable it, you won't have to resolve the same conflict multiple times anymore.
 
 ---
 
-Originally posted on [Stack Overflow](http://stackoverflow.com/a/42165259/1225328).
+*Originally posted on [Stack Overflow](http://stackoverflow.com/a/42165259/1225328).*
