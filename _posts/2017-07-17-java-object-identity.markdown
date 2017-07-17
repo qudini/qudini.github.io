@@ -176,7 +176,7 @@ What happened here? Well, our `compareTo` implementation is not consistent with 
 
 > Returns a negative integer, **zero**, or a positive integer as this object is less than, **equal to**, or greater than the specified object.
 
-In the example, both `Item`s share the same `name`: `"first"`. Thus, `compareTo` returns `0`, although our objects are not equal (they are just sharing the same `name`). The issue is that **`TreeSet` doesn't use `equals`/`hashCode` to check for duplicates, but `compareTo`'s result'**, as it is implied that `compareTo` returns `0` if instances are equal. So `TreeSet` is actually right: to improve performances, no need to call `equals`/`hashCode` if `compareTo` has been already called.
+In the example, both `Item`s share the same `name`: `"first"`. Thus, `compareTo` returns `0`, although our objects are not equal (they are just sharing the same `name`). The issue is that **`TreeSet` doesn't use `equals`/`hashCode` to check for duplicates, but `compareTo`'s result**, as it is implied that `compareTo` returns `0` if instances are equal. So `TreeSet` is actually right: to improve performances, it should not need to call `equals`/`hashCode` if `compareTo` has been already called.
 
 To make our `compareTo` method consistent with our `equal` one, we must compare `id`s when `name`s are equal:
 
@@ -191,7 +191,7 @@ public int compareTo(Item o) {
 }
 ```
 
-That way, `compareTo` will return `0` only if `id`s are equal.
+That way, **`compareTo` will return `0` only if `id`s are equal**.
 
 Let's try again to add two instances sharing the same `name` in a `TreeSet`:
 
