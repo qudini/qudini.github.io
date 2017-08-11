@@ -2,10 +2,7 @@
 layout: post
 title:  "git merge vs. git rebase"
 author: christophe_maillard
-date:   2017-03-22 16:42:00 +0000
-categories: qudini git merge rebase
 ---
-## Preamble
 
 This post is widely oriented around [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). The tables have been generated with the nice [ASCII Table Generator](https://ozh.github.io/ascii-tables/), and the history trees with this wonderful command ([aliased](https://githowto.com/aliases) as `git lg`):
 
@@ -322,7 +319,7 @@ git config --global pull.rebase true
 
 #### `git rerere`
 
-Again, nicely explained [here](https://git-scm.com/blog/2010/03/08/rerere.html). But put simple, if you enable it, you won't have to resolve the same conflict multiple times anymore.
+Again, nicely explained [here](https://git-scm.com/blog/2010/03/08/rerere.html). But put simply, if you enable it, you won't have to resolve the same conflict multiple times anymore.
 
 ---
 
