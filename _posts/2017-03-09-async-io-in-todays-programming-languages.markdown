@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "We'll Check Back Later; Async IO in Today's Programming Languages"
+title:  "Async IO in Today's Programming Languages"
 author: louis_jackman
-date:   2017-03-09 16:53:55 +0000
-categories: qudini programming performance async
 ---
+
 Async IO has become a must-have feature on the checklist of trendy new
 technology stacks, yet they often disagree on what passes as 'asynchronous' or
 even 'non-blocking' features.  Similar disagreements exist about the precise
@@ -177,14 +176,14 @@ processes can starve out responses to other events; a good example is the DoS
 attacks against Node.js using overly permissive regular expressions.
 
 ```lua
-# Lua 5+
+-- Lua 5+
 
-# You have no idea whether this will context switch or not; it's the API
-# designer's decision. The API decides when to switch, and unlike await/async,
-# it doesn't need to define it as part of the API. It can just choose to do it
-# in the bowels of its implementation. The advantage is that APIs can add
-# transparent non-blocking support without changing APIs; the disadvantage is a
-# not being able to make assertions about the order of events.
+-- You have no idea whether this will context switch or not; it's the API
+-- designer's decision. The API decides when to switch, and unlike await/async,
+-- it doesn't need to define it as part of the API. It can just choose to do it
+-- in the bowels of its implementation. The advantage is that APIs can add
+-- transparent non-blocking support without changing APIs; the disadvantage is a
+-- not being able to make assertions about the order of events.
 write_request_payload()
 ```
 

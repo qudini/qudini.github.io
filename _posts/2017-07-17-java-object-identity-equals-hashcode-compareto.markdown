@@ -2,17 +2,12 @@
 layout: post
 title:  "Java object identity, or how to override equals, hashCode and compareTo"
 author: christophe_maillard
-date:   2017-07-17 16:42:00 +0000
-categories: qudini java equals hashcode compareto object identity
 ---
-## Java object identity, or how to override equals, hashCode and compareTo
 
 Two rules when dealing with object identities in Java:
 
 1. Override `hashCode` when you override `equals`
 2. Make `compareTo` consistent with `equals`
-
----
 
 ### Implement `hashCode` when you override `equals`
 
@@ -92,8 +87,6 @@ System.out.println(items); // great, instances are successfully considered as du
 
 Indeed, in this case, `i1.hashCode() == i2.hashCode()`.
 
----
-
 One side rule that you should be aware of, is that while two instances that are equal *must* return the same hash code, **two instances that return the same hash code are not necessarily equal**.
 
 Indeed, when I say *"`HashSet` first compares the `hashCode`s of its elements: if they match, then it compares thanks to `equals`"*, one could wonder: why do we actually need to call `equals` once we know the `hashCode`s match?
@@ -106,8 +99,6 @@ System.out.println("Ea".hashCode()); // 2236
 ```
 
 So if `HashSet` used hash codes only, these two strings would have been considered equal: only one would have been kept.
-
----
 
 ### Make `compareTo` consistent with `equals`
 

@@ -2,10 +2,7 @@
 layout: post
 title:  "Using SASS Flexbox"
 author: russell_wenban
-date:   2017-06-28 16:20:00 +0000
-categories: qudini SASS
 ---
-## Introduction
 
 Although at Qudini we use the Bootstrap Framework, I've been using [Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) to layout items in a number of instances.
 
@@ -92,7 +89,7 @@ See [Plunker](https://plnkr.co/edit/ACY04CTPObd9dDkQ2tOX)
 
 ## Set of vertically aligned buttons
 
-Following the the sequential pattern: display (flex of course), direction (row), justify the items in the row from the left, align items in the cross-axis. 
+Following the the sequential pattern: display (flex of course), direction (row), justify the items in the row from the left, align items in the cross-axis.
 
 ```
 // will align the content vertically centrally and horizontal from the left (with no margin)
@@ -131,12 +128,12 @@ The right hand side button can be aligned to the right by adding a class to the 
 
 In this case the Bootstrap style `pull-right` won’t work so it’s a good use-case for flexbox.
 
-see [plunker](https://plnkr.co/edit/IRk6peFHYllMt11ARJlY)
+See [Plunker](https://plnkr.co/edit/IRk6peFHYllMt11ARJlY)
 
 
 ## Conclusion
 
-My [Plunker](https://plnkr.co/edit/Q8r9z3LznyQsse9vppPu?p=preview) includes further examples including the [Holy Grail] (https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/) , container with Grow (items fill the available height), container with a sticky footer, a two panel layout and a container with multiple rows and columns. Feel free to try examples from this Plunker, fork your own and keep experimenting.
+My [Plunker](https://plnkr.co/edit/Q8r9z3LznyQsse9vppPu?p=preview) includes further examples including the [Holy Grail](https://philipwalton.github.io/solved-by-flexbox/demos/holy-grail/), container with Grow (items fill the available height), container with a sticky footer, a two panel layout and a container with multiple rows and columns. Feel free to try examples from this Plunker, fork your own and keep experimenting.
 
 I hope you have learnt something from this blog post, at the least I believe I have provided a starting of point in how to systematically use Flexbox.
 
@@ -144,9 +141,6 @@ I hope you have learnt something from this blog post, at the least I believe I h
 
 * [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * [The Ultimate Flexbox Cheat Sheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
-* Some useful tips and examples can be found here: [webflow.com)](https://preview.webflow.com/preview/flexbox?preview=78f49011ac3db6ccea265c2ba8a94185&m=1)
+* Some useful tips and examples can be found here: [webflow.com](https://preview.webflow.com/preview/flexbox?preview=78f49011ac3db6ccea265c2ba8a94185&m=1)
 * Mozilla gives a very clear description of Flex terminology: [Using CSS Flexible Boxes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
-* On Stack Overflow see: [Methods for Aligning Flex Items along the Main Axis](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609) this answer provides a use playground to explore how to position items outside their default position on the _main axis_: [playground](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609)
-
-
-
+* On Stack Overflow see: [Methods for Aligning Flex Items along the Main Axis](https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609) this answer provides a use [playground]((https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609)) to explore how to position items outside their default position on the _main axis_
