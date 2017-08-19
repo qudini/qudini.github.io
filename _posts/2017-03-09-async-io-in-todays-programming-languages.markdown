@@ -2,6 +2,7 @@
 layout: post
 title:  "Async IO in Today's Programming Languages"
 author: louis_jackman
+comments: true
 ---
 
 Async IO has become a must-have feature on the checklist of trendy new

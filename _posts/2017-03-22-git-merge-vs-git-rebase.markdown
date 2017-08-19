@@ -2,6 +2,7 @@
 layout: post
 title:  "git merge vs. git rebase"
 author: christophe_maillard
+comments: true
 ---
 
 This post is widely oriented around [Git Flow](http://nvie.com/posts/a-successful-git-branching-model/). The tables have been generated with the nice [ASCII Table Generator](https://ozh.github.io/ascii-tables/), and the history trees with this wonderful command ([aliased](https://githowto.com/aliases) as `git lg`):

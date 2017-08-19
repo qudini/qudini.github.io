@@ -2,6 +2,7 @@
 layout: post
 title:  "Java object identity, or how to override equals, hashCode and compareTo"
 author: christophe_maillard
+comments: true
 ---
 
 Two rules when dealing with object identities in Java:
