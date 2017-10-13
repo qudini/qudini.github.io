@@ -14,7 +14,7 @@ layout: default
           <li><a href="{{ author.web }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a></li>
         {% endfor %}
       </ul>
-    {% else page.author %}
+    {% else %}
       {% assign author = site.data.authors[page.author] %}
       <p>Written by <a href="{{ author.web }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a></p>
     {% endif %}
