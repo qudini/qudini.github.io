@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Developer Conversation: Functional Programming, Message-Passing, and Objects"
-author:
+authors:
   - louis_jackman
   - christophe_maillard
 comments: true

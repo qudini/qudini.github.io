@@ -18,3 +18,6 @@ This is a development blog managed by qudini's technical team.
   https://github.com/qudini/qudini.github.io.`
 * Once the PR is accepted, pull master from upstream back into your fork and
   delete the feature branch in the now-merged PR.
+
+A post can have either an `author` or an `authors` property. The former is just
+a shorthand for the latter, specifying only one element.
